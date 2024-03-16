@@ -1,0 +1,36 @@
+{
+  "name": "ai-experiments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "packageManager": "yarn@4.1.1",
+  "type": "module",
+  "scripts": {
+    "build": "yarn workspaces foreach -Ap run build",
+    "embeddings_01:run": "yarn workspace @ai/embeddings_01 run run",
+    "embeddings_01:start": "yarn workspace @ai/embeddings_01 run start"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin-ts": "^1.6.3",
+    "@types/eslint": "^8",
+    "@types/node": "^20.11.25",
+    "@types/prompts": "^2",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "eslint": "^8.57.0",
+    "ts-node-dev": "^2.0.0",
+    "tsc": "^2.0.4",
+    "typescript": "^5.4.2"
+  },
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "dependencies": {
+    "@mistralai/mistralai": "^0.1.3",
+    "chromadb": "^1.8.1",
+    "dotenv": "^16.4.5",
+    "ollama": "^0.4.9",
+    "prompts": "^2.4.2"
+  }
+}

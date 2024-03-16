@@ -1,0 +1,46 @@
+.env
+
+# Node.js
+node_modules/
+
+# Yarn
+yarn-error.log
+
+# TypeScript
+*.js
+*.js.map
+*.d.ts
+
+# Editor
+.vscode/
+
+# Build output
+dist/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# IDE specific files
+.idea/
+*.iml
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# macOS specific files
+.DS_Store
+
+# Backup files
+*.bak
+*.swp
+*~

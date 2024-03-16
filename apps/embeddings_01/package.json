@@ -1,0 +1,16 @@
+{
+  "name": "@ai/embeddings_01",
+  "packageManager": "yarn@4.1.1",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev src/index.ts",
+    "start": "node dist/index.js",
+    "run": "yarn build && yarn start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@ai/utils": "workspace:*"
+  }
+}
